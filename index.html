@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oración para Proteger a Toda Nuestra Familia</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="icon-192x192.png" type="image/png">
+    <link rel="apple-touch-icon" href="icon-512x512.png">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <style>
+        body {
+            background-color: #87CEEB; /* Color celeste */
+            font-family: "Times New Roman", Times, serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px; /* Tamaño de letra más grande para el título */
+            color: #333;
+        }
+        p {
+            font-size: 24px; /* Tamaño de letra más grande para el párrafo */
+            line-height: 1.8;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>ORACIÓN PARA PROTEGER<br>TODA NUESTRA FAMILIA</h1>
+    
+    <p>Yo, indigno hijo del Padre, en este final de los tiempos reclamo pertenecer al linaje de David...</p>
+    
+    <p>El ángel de la justicia perseverará en nuestros hogares...</p>
+
+    <!-- Registrar el Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(() => console.log('Service Worker registrado'))
+                .catch(err => console.error('Error al registrar el Service Worker', err));
+        }
+    </script>
+</body>
+</html>
